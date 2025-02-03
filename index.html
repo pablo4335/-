@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <img src="logo.png" alt="Логотип сайта" id="logo">
+    <h1>Добро пожаловать И ДИСЯ ПИСЯ</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="gallery">
+    <h2>наши работы</h2>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="Изображение 1">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="Изображение 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" alt="Изображение 3">
+            </div>
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="Изображение 4">
+            </div>
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="Изображение 5">
+            </div>
+        </div>
+        <button class="carousel-control prev">❮</button>
+        <button class="carousel-control next">❯</button>
+    </div>
+</section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы — команда профессионалов.</p>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <ul>
+            <li>монтаж демонтаж натяжных потолков</li>
+            <li>монтаж и демонтаж световых приборов</li>
+            <li>ДИСЯ САСЕТ</li>
+        </ul>
+    </section>
+
+    <!-- Новый раздел "Галерея" -->
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <form id="uploadForm">
+            <label for="photo">Загрузите фото:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+            
+            <label for="video">Загрузите видео:</label>
+            <input type="file" id="video" name="video" accept="video/*">
+            
+            <button type="submit">Загрузить</button>
+        </form>
+
+        <div id="galleryContent">
+            <h3>Загруженные файлы:</h3>
+            <div id="uploadedFiles"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <form id="contactForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Мой сайт. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<div class="carousel-indicators">
+    <span class="indicator active" data-index="0"></span>
+    <span class="indicator" data-index="1"></span>
+    <span class="indicator" data-index="2"></span>
+</div>
+</html>
